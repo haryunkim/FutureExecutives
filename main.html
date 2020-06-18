@@ -5,7 +5,8 @@
     <title>Future Executives</title>
 
     <!-- Font Awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
     <!-- css -->
     <link rel="stylesheet" type = "text/css" href="css/main.css" />
@@ -13,6 +14,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
+
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon"></span>
+      </label>
+
+      <div class="navigation__background">
+        &nbsp;
+      </div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#" class="navigation__link">About Us</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Donate</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Join</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Resources</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Podcast</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Blog</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Testimonials</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="header__logo-box">
         <a href="main.html">
@@ -130,9 +156,9 @@
           </div>
           <div class="col-1-of-2">
             <div class="composition">
-              <img src="images/about1.PNG" alt="photo 1" class="composition__photo composition__photo--p1">
-              <img src="images/about2.PNG" alt="photo 1" class="composition__photo composition__photo--p2">
-              <img src="images/about3.PNG" alt="photo 3" class="composition__photo composition__photo--p3">
+              <img src="images/about1.png" alt="photo 1" class="composition__photo composition__photo--p1">
+              <img src="images/about2.png" alt="photo 1" class="composition__photo composition__photo--p2">
+              <img src="images/about3.png" alt="photo 3" class="composition__photo composition__photo--p3">
             </div>
           </div>
 
@@ -186,14 +212,203 @@
       </div>
 
       <div class="section-features__textbox">
-        <a href="#" class="btn btn--white btn--animated">View All Resources</a>
+        <a href="#" class="btn btn--white">View All Resources</a>
       </div>
 
     </section>
 
+    <section class="section-tours">
+      <div class="u-center-text u-margin-bottom-10">
+        <h2 class="heading-secondary">
+          Podcasts and Blogs
+        </h2>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="card">
+              <div class="card__side card__side--front">
+                  <div class="card__picture card__picture--1">
+                    &nbsp;
+                  </div>
+                  <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--1">View Our Podcasts</span>
+                  </h4>
+                  <div class="card__details u-center-text u-padding-top-4">
+                    <h3 class="heading-tertiary u-margin-bottom-2">
+                      Most Recent Podcast
+                    </h3 class="featurebox__text">
+                    <p class="u-font-size-15">
+                      Who knew that writing a letter to Spike Lee would lead Winsome Sinclair to a path of success in 3 days?
+                      "I come from a small town in long Island. I enjoyed doing theatre throughly,  I wasn’t a performer..."
+                    </p>
+                  </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <a href="#" class="btn btn--white">Listen Now</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">
+                  &nbsp;
+                </div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2">View Our Blogs</span>
+                </h4>
+                <div class="card__details u-center-text u-padding-top-4">
+                  <h3 class="heading-tertiary u-margin-bottom-2">
+                    Most Recent Blog
+                  </h3 class="featurebox__text">
+                  <p class="u-font-size-15">
+                    "Everyday Hairstyles for Thin Hair"
+                  </p>
+                  <p class="u-font-size-15">
+                    by Wendy Dressler
+                  </p>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <a href="#" class="btn btn--white">Read Now</a>
+                </div>
+              </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <section class="section-testimony">
+      <div class="u-center-text u-margin-bottom-10">
+        <h2 class="heading-secondary">
+          Testimonials
+        </h2>
+      </div>
+
+      <div class="row">
+        <div class="story">
+          <figure class="story__shape">
+            <img src="images/buck.jpg" alt="buck3000" class="story__image">
+            <figcaption class="story__caption">Buck3000</figcaption>
+          </figure>
+          <div class="story__text">
+            <h3 class="heading-tertiary u-margin-bottom-2">
+              "Introduced me to a whole new world"
+            </h3>
+            <p>
+              "When I was in college, I really wanted to work in the music industry,
+              but I wasn’t sure how to get in. After asking around, I was introduced to Monet,
+              the founder of Future Executives, inc. through a friend. At the time,
+              she was working at Penalty Records and they thought she would be a good
+              contact for me. She hired me as her intern and introduced me to a whole new world.
+              After twelve years of being in this business, I can honestly say it was being under
+              Monet’s tutelage that helped me get to where I am today. Not only did she teach me the basics,
+              but she also introduced me to many of the biggest players in the game.
+              Monet taught me executives skills and was always there to guide me.  I will always appreciate that about her."
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="story">
+          <figure class="story__shape">
+            <img src="images/anonymous.png" alt="buck3000" class="story__image">
+            <figcaption class="story__caption">Nekia</figcaption>
+          </figure>
+          <div class="story__text">
+            <h3 class="heading-tertiary u-margin-bottom-2">
+              "Appreciates and incorporates the ideas of others"
+            </h3>
+            <p>
+              "It was great to be around someone  Future Executives, Inc., Founder,
+              Ms. Wahls while I attended High School. She was such a down to earth teacher,
+              which you don’t always come across these days. I interned for her when I was a
+              sophomore, performed in her production of “The Dance Never Stopped” and she
+              was my coach for our school step team during my junior year. Working with her
+              was a pleasure because she make you feel your opinions matter.  She is someone
+              that appreciates and incorporates the ideas of others into what she does.  You
+              can always expect to see her modeling  and teaching the skills needed to be a Future Executive."
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="u-center-text u-margin-top-huge">
+        <a href="#" class="btn-text">Read All Testimonials &rarr;</a>
+      </div>
+    </section>
+
+    <section class="section-support">
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="support-box">
+            <img src="images/heart.png" alt="donate">
+            <h3 class="heading-tertiary u-margin-bottom-2">
+              Make a difference
+            </h3>
+            <p class="u-font-size-15">
+              No gift is too small. Tax-deductible donations help use improve website capabilities, your leadership trainings
+              and offer more programs at no cost to our youth.
+            </p>
+            <div class="support-box__image">
+              <a href="https://www.paypal.com/donate/?token=p8ApNnB4xuYeN1Im0rekeLj-_tSx0owDMZM0Ij2XBCh3nJvswi-47HFWgves19Ug6L3A_0&country.x=US&locale.x=US" target="_blank" class="btn btn--white">Donate</a>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-1-of-2">
+          <div class="support-box">
+            <img src="images/join.png" alt="join" style="width: 15%;">
+            <h3 class="heading-tertiary u-margin-bottom-2 u-center-text">
+              Get Involved
+            </h3>
+            <p class="u-font-size-15 u-center-text">
+              Join our growing network and help support the movement for a brighter future! Whatever you specialize in helping in
+              we would be really pleased to have you on board!
+            </p>
+            <div class="support-box__image">
+              <a href="#" class="btn btn--white">Join Us</a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
     </main>
 
+    <footer class="footer">
+      <div class="footer__info">
+        <p><a href="#" class="footer__info--list">Terms of Service </a> | <a href="#" class="footer__info--list"> Privacy Policy</a></p>
+      </div>
 
+      <div class="footer__info">
+        <p>2020 Future Executives, INC - All rights reserved</p>
+      </div>
+
+      <div class="footer__info">
+        <a href="http://www.twitter.com/futureexecs" class="footer__icon" target="_blank"><i class="footer__icon--more fab fa-twitter" style="color: grey;"></i></a>
+        <a href="http://www.facebook.com/futureexecs" class="footer__icon" target="_blank"><i class="footer__icon--more fab fa-facebook" style="color: grey;"></i></a>
+        <a href="https://www.youtube.com/channel/UCvsRsJjHjmDJAqTuSDKDqvg" class="footer__icon" target="_blank"><i class="footer__icon--more fab fa-youtube" style="color:grey;"></i></a>
+        <a href="http://www.instagram.com/futureexecs" class="footer__icon" target="_blank"><i class="footer__icon--more fab fa-instagram" style="color:grey;"></i></a>
+      </div>
+
+
+
+    </footer>
 
   </body>
 </html>
