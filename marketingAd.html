@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Marketing/Advertising</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon"></span>
+      </label>
+
+      <div class="navigation__background">
+        &nbsp;
+      </div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="about.html" class="navigation__link">About Us</a></li>
+          <li class="navigation__item"><a href="https://www.paypal.com/donate/?token=abPsvM9bxnUPdQRltdw184x3M93KC_Nf6ndI05SMAr6N3AsI28_OL91fjCrpCt1pPd0m0G&country.x=US&locale.x=US" target="_blank" class="navigation__link">Donate</a></li>
+          <li class="navigation__item"><a href="join.html" class="navigation__link">Join</a></li>
+          <li class="navigation__item"><a href="resources.html" class="navigation__link">Resources</a></li>
+          <li class="navigation__item"><a href="podcast.html" class="navigation__link">Podcast</a></li>
+          <li class="navigation__item"><a href="blog.html" class="navigation__link">Blog</a></li>
+          <li class="navigation__item"><a href="testimonial.html" class="navigation__link">Testimonials</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <header class="header2">
+      <div class="header2__logo-box">
+        <a href="main.html">
+          <img src="images/logo.jpg" alt="logo" class="header2__logo">
+        </a>
+      </div>
+
+      <div class="header2__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Marketing/Advertising</span>
+        </h1>
+
+      </div>
+    </header>
+
+    <main>
+      <section class="u-center-text u-padding-10">
+        <p class="paragraph">Marketing and Advertising requires lots of creativity and social networking</p>
+        <p class="paragraph">Take a look at our virtual volunteers' biographies to see more about careers in these fields</p>
+        <button class="collapsible">Robin Caldwell</button>
+        <div class="collapsible__content">
+          <p>“I was born to do this!”  Robin Caldwell is the principal of The J Standard Media Group, LLC, a PR consultancy and media group located in northeast Ohio. Specialties of The J Standard include PR consultancy, strategic publicity plans, Social Media PR and digital interactive strategies, book publicity and packaging, editorial services for publishers and authors,  and support servicesfor PR professionals. Robin Caldwell holds a MA in public campaign communication from the Scripps College of Communication of Ohio University.</p>
+            <br>
+            <p>She is a former adjunct faculty member and lecturer for Ohio University and Cleveland State University. Her PR experiences span over 20 years and she can boast of working for the late Katherine Dunham and Barry White in her humble beginnings in St. Louis, Missouri. Today, her current client roster includes celebrity makeup artist, Tia Dantzler; celebrity hairstylist and entrepreneur Ellin LaVar; and shoe designer and philanthropist Etu Evans.</p>
+          
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__info">
+        <p><a href="#" class="footer__info--list">Terms of Service </a> | <a href="#" class="footer__info--list"> Privacy Policy</a></p>
+      </div>
+
+      <div class="footer__info">
+        <p>2020 Future Executives, INC - All rights reserved</p>
+      </div>
+
+      <div class="footer__info">
+        <a href="http://www.twitter.com/futureexecs" class="footer__icon" target="_blank"><i class="footer__icon--more fab fa-twitter" style="color: grey;"></i></a>
+        <a href="http://www.facebook.com/futureexecs" class="footer__icon" target="_blank"><i class="footer__icon--more fab fa-facebook" style="color: grey;"></i></a>
+        <a href="https://www.youtube.com/channel/UCvsRsJjHjmDJAqTuSDKDqvg" class="footer__icon" target="_blank"><i class="footer__icon--more fab fa-youtube" style="color:grey;"></i></a>
+        <a href="http://www.instagram.com/futureexecs" class="footer__icon" target="_blank"><i class="footer__icon--more fab fa-instagram" style="color:grey;"></i></a>
+      </div>
+    </footer>
+
+  </body>
+  <script type="text/javascript">
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+</html>
